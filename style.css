@@ -1,0 +1,20 @@
+.fondoAzul{
+    background-color: skyblue;
+}
+
+.bordecuadrito{
+
+    border-radius: 50px;
+}
+
+.colorBotones{
+    color: black;
+}
+
+.bordexd{
+    border-left: 20px;
+    border-right: 20px;
+    border-top: 20px;
+    border-bottom:20px;
+}
+
