@@ -65,45 +65,37 @@ function mostrarDatos(datosFiltrados){
     let contenedorPadre = document.getElementById("contenedorPadre");
 
     datosFiltrados.map(function(pista){
-        // CREAR UN DIV CON LA CLASE COL
+        
+        
 
         let contenedorColumna = document.createElement("div");
         contenedorColumna.classList.add("col");
 
-        // CREAR UN DIV CON LA CLASE CARD
+        
         let contenedorCard = document.createElement("div");
         contenedorCard.classList.add("card");
         contenedorCard.classList.add("h-100");
 
-        // PINTAR LA IMG CON LA CLASE PERTINENTE XD
+        
+        
 
         let cardIMG = document.createElement("img");
         cardIMG.classList.add("card-img-top");
         cardIMG.src = pista.foto;
 
+        
         let tituloCancion = document.createElement("h5");
         tituloCancion.classList.add("card-title", "text-center");
         tituloCancion.textContent = pista.nombre;
 
+        
         let audioCancion = document.createElement("audio");
         audioCancion.controls = true;
         audioCancion.src = pista.audio;
         audioCancion.classList.add("align-self-center");
-        
-        
-        
-        
 
 
-        // PINTAR UN H5 Y UNA ETIQUETA AUDIO, Y ACOMODARLAS EN LA ESTRUCTURA
-        // COLOCAR UN ATRIBUTO DESDE JAVASCRIPT
-
-
-
-        /*
         
-        
-        *// /////////////////////////////// DEFINIR LA ESTRUCTURA ¿QUIEN VA DENTRO DE KIEN?
         
         contenedorCard.appendChild(audioCancion);
 
@@ -120,26 +112,3 @@ function mostrarDatos(datosFiltrados){
 }
 
 
-
-/*let peticion = {
-
-    method: "GET",
-    headers:{
-        Authorization:tokenAuto
-    }
-    
-}
-
-fetch(URLGET, peticion)
-.then(function(respuesta2){
-
-    return(respuesta2.json())
-
-})
-
-.then(function(datos2){
-    
-    console.log(datos2)
-    console.log(datos2.tracks)
-
-})*/
